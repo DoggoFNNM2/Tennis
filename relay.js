@@ -1,9 +1,9 @@
 // relay.js
 // Simple WebSocket relay server for Godot 4 Tennis Math Game
 
-import express from "express";
-import { WebSocketServer } from "ws";
-import { randomInt } from "crypto";
+const express = require("express");
+const { WebSocketServer } = require("ws");
+const { randomInt } = require("crypto");
 
 // ----- Express server just to satisfy Render -----
 const app = express();
